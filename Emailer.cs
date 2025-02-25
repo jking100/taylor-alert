@@ -17,18 +17,9 @@ namespace TaylorEmailerFunction
     }
     public class Emailer
     {
-
-        private readonly ILogger<Emailer> _logger;
-
-        public Emailer(ILogger<Emailer> logger)
-        {
-            _logger = logger;
-        }
-
         [Function("Emailer")]
         public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequest req)
         {
-            //_logger.LogInformation("C# HTTP trigger function processed a request.");
             if (req.ContentType != "application/json")
             {
                 return new BadRequestObjectResult("Not allowed");
