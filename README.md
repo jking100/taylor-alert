@@ -1,6 +1,6 @@
 # Taylor API Documentation
 
-<BASE_URL>: `tayloremailerfunction20250218182058.azurewebsites.net`
+<BASE_URL>: [tayloremailerfunction20250218182058.azurewebsites.net](https://tayloremailerfunction20250218182058.azurewebsites.net)
 
 ## Authentication
 All endpoints except the root require authentication using the `x-functions-key` header. Set the value of this header to your API key.
@@ -30,8 +30,7 @@ All endpoints except the root require authentication using the `x-functions-key`
 - Response: If successful, HTTP response with copy of the full message sent, otherwise error message 
 - Side effects: Succesful execution sends an email to your personal Gmail with subject line "Notification - Script Execution Finished"
 
-## Example cURL Commands cuz im nice 
-##### (DOES NOT REQUIRE CURL OR PYTHON OR BASH)
+## Example cURL Commands cuz I'm nice
 
 Send a notification email with an additional message:
 
@@ -52,7 +51,7 @@ curl -X POST `
   -H 'x-functions-key: <KEY>'
 ```
 
-### Proof it works since I know youre going to give me a hard time cuz ull type the connection incorrectly or something
+### Proof it works since I know you're going to give me a hard time cuz you'll type the connection incorrectly or something
 
 ```
 PS C:\Users\Joe> curl -X POST `
